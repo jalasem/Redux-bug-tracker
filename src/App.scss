@@ -1,0 +1,93 @@
+.App {
+  max-width: 30rem;
+  border: 0.5rem solid black;
+  border-radius: 1rem;
+  margin: 1vh auto;
+  height: 98vh;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+
+  header {
+    background-color: black;
+    color: white;
+    display: grid;
+    place-content: center;
+    height: 4rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 1rem;
+    grid-column-gap: 0.5rem;
+    border-bottom: 1px solid grey;
+
+    input {
+      font-size: 1.25rem;
+      padding: 0 0.5rem;
+      border-radius: 4px;
+      border: black 2px solid;
+    }
+  }
+
+  .bugs {
+    padding: 0 1rem;
+    overflow-y: auto;
+
+    .heading {
+      text-decoration: underline;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #615e5e;
+    }
+
+    .icon {
+      width: 1rem;
+      height: 1rem;
+      cursor: pointer;
+    }
+
+    .bug {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      grid-column-gap: 0.85rem;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .empty {
+      color: #615e5e;
+      font-size: 0.85rem;
+    }
+
+    .unresolved-bugs {
+      margin-bottom: 2rem;
+    }
+    .resolved-bugs {
+    }
+  }
+
+  footer {
+    background: #f2f2f2;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+
+    span {
+      padding: 0 1rem;
+      border-right: 1px solid #979797;
+
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+        border-right: none;
+      }
+    }
+  }
+}
